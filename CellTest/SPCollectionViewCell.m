@@ -9,13 +9,18 @@
 #import "SPCollectionViewCell.h"
 #import "DetailTableViewCell.h"
 
+@implementation MyTableView
+
+@end
+
+
 @implementation SPCollectionViewCell
 
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     
     if (self) {
-        self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+        self.tableView = [[MyTableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
         
         [self.tableView registerNib:[UINib nibWithNibName:@"DetailTableViewCell" bundle:nil] forCellReuseIdentifier:TableViewCellIdentifier];
         [self.contentView addSubview:self.tableView];
@@ -33,6 +38,7 @@
 - (void)setTableViewDataSourceDelegate:(id<UITableViewDataSource,UITableViewDelegate>)dataSourceDelegate indexPath:(NSIndexPath *)indexPath {
     self.tableView.dataSource = dataSourceDelegate;
     self.tableView.delegate = dataSourceDelegate;
+    self.tableView.indexPath = indexPath;
     [self.tableView reloadData];
 }
 @end

@@ -10,9 +10,14 @@
 
 static NSString *TableViewCellIdentifier = @"TableViewCellIdentifier";
 
-@interface SPCollectionViewCell : UICollectionViewCell
+@interface MyTableView : UITableView
 
-@property (nonatomic, strong)UITableView *tableView;
+@property (nonatomic, strong) NSIndexPath *indexPath;
+
+@end
+
+@interface SPCollectionViewCell : UICollectionViewCell
+@property (nonatomic, strong)MyTableView *tableView;
 
 - (void)setTableViewDataSourceDelegate:(id<UITableViewDataSource, UITableViewDelegate>)dataSourceDelegate indexPath:(NSIndexPath *)indexPath;
 @end
