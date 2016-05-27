@@ -9,13 +9,12 @@
 /* Begin PBXBuildFile section */
 		CEE75F321CF7CA260038467F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE75F311CF7CA260038467F /* main.m */; };
 		CEE75F351CF7CA260038467F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE75F341CF7CA260038467F /* AppDelegate.m */; };
-		CEE75F381CF7CA260038467F /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE75F371CF7CA260038467F /* MasterViewController.m */; };
-		CEE75F3B1CF7CA260038467F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE75F3A1CF7CA260038467F /* DetailViewController.m */; };
 		CEE75F3E1CF7CA270038467F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE75F3C1CF7CA260038467F /* Main.storyboard */; };
 		CEE75F401CF7CA270038467F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE75F3F1CF7CA270038467F /* Assets.xcassets */; };
 		CEE75F431CF7CA270038467F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE75F411CF7CA270038467F /* LaunchScreen.storyboard */; };
 		CEE75F4E1CF7CA270038467F /* CellTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE75F4D1CF7CA270038467F /* CellTestTests.m */; };
 		CEE75F591CF7CA270038467F /* CellTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE75F581CF7CA270038467F /* CellTestUITests.m */; };
+		CEE75F681CF7CAA40038467F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE75F671CF7CAA40038467F /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +39,6 @@
 		CEE75F311CF7CA260038467F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CEE75F331CF7CA260038467F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEE75F341CF7CA260038467F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CEE75F361CF7CA260038467F /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		CEE75F371CF7CA260038467F /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		CEE75F391CF7CA260038467F /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		CEE75F3A1CF7CA260038467F /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		CEE75F3D1CF7CA260038467F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEE75F3F1CF7CA270038467F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEE75F421CF7CA270038467F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +49,8 @@
 		CEE75F541CF7CA270038467F /* CellTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CellTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE75F581CF7CA270038467F /* CellTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellTestUITests.m; sourceTree = "<group>"; };
 		CEE75F5A1CF7CA270038467F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEE75F661CF7CAA40038467F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CEE75F671CF7CAA40038467F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,15 +103,13 @@
 			children = (
 				CEE75F331CF7CA260038467F /* AppDelegate.h */,
 				CEE75F341CF7CA260038467F /* AppDelegate.m */,
-				CEE75F361CF7CA260038467F /* MasterViewController.h */,
-				CEE75F371CF7CA260038467F /* MasterViewController.m */,
-				CEE75F391CF7CA260038467F /* DetailViewController.h */,
-				CEE75F3A1CF7CA260038467F /* DetailViewController.m */,
 				CEE75F3C1CF7CA260038467F /* Main.storyboard */,
 				CEE75F3F1CF7CA270038467F /* Assets.xcassets */,
 				CEE75F411CF7CA270038467F /* LaunchScreen.storyboard */,
 				CEE75F441CF7CA270038467F /* Info.plist */,
 				CEE75F301CF7CA260038467F /* Supporting Files */,
+				CEE75F661CF7CAA40038467F /* ViewController.h */,
+				CEE75F671CF7CAA40038467F /* ViewController.m */,
 			);
 			path = CellTest;
 			sourceTree = "<group>";
@@ -275,10 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE75F681CF7CAA40038467F /* ViewController.m in Sources */,
 				CEE75F351CF7CA260038467F /* AppDelegate.m in Sources */,
-				CEE75F381CF7CA260038467F /* MasterViewController.m in Sources */,
 				CEE75F321CF7CA260038467F /* main.m in Sources */,
-				CEE75F3B1CF7CA260038467F /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
