@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+static NSString *TableViewCellIdentifier = @"TableViewCellIdentifier";
+
 @interface SPCollectionViewCell : UICollectionViewCell
 
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *mainViewHeightConstraint;
+@property (nonatomic, strong)UITableView *tableView;
+
+- (void)setTableViewDataSourceDelegate:(id<UITableViewDataSource, UITableViewDelegate>)dataSourceDelegate indexPath:(NSIndexPath *)indexPath;
 @end

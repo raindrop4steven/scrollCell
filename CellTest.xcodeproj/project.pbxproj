@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEE65FE41CF86719006C6AB8 /* DetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE65FE21CF86719006C6AB8 /* DetailTableViewCell.m */; };
+		CEE65FE51CF86719006C6AB8 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE65FE31CF86719006C6AB8 /* DetailTableViewCell.xib */; };
 		CEE75F321CF7CA260038467F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE75F311CF7CA260038467F /* main.m */; };
 		CEE75F351CF7CA260038467F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE75F341CF7CA260038467F /* AppDelegate.m */; };
 		CEE75F3E1CF7CA270038467F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE75F3C1CF7CA260038467F /* Main.storyboard */; };
@@ -16,7 +18,6 @@
 		CEE75F591CF7CA270038467F /* CellTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE75F581CF7CA270038467F /* CellTestUITests.m */; };
 		CEE75F681CF7CAA40038467F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE75F671CF7CAA40038467F /* ViewController.m */; };
 		CEE75F6C1CF7CD990038467F /* SPCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE75F6A1CF7CD990038467F /* SPCollectionViewCell.m */; };
-		CEE75F6D1CF7CD990038467F /* SPCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE75F6B1CF7CD990038467F /* SPCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CEE65FE11CF86719006C6AB8 /* DetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewCell.h; sourceTree = "<group>"; };
+		CEE65FE21CF86719006C6AB8 /* DetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewCell.m; sourceTree = "<group>"; };
+		CEE65FE31CF86719006C6AB8 /* DetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
 		CEE75F2D1CF7CA260038467F /* CellTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CellTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE75F311CF7CA260038467F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CEE75F331CF7CA260038467F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,7 +59,6 @@
 		CEE75F671CF7CAA40038467F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CEE75F691CF7CD990038467F /* SPCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCollectionViewCell.h; sourceTree = "<group>"; };
 		CEE75F6A1CF7CD990038467F /* SPCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCollectionViewCell.m; sourceTree = "<group>"; };
-		CEE75F6B1CF7CD990038467F /* SPCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +120,9 @@
 				CEE75F671CF7CAA40038467F /* ViewController.m */,
 				CEE75F691CF7CD990038467F /* SPCollectionViewCell.h */,
 				CEE75F6A1CF7CD990038467F /* SPCollectionViewCell.m */,
-				CEE75F6B1CF7CD990038467F /* SPCollectionViewCell.xib */,
+				CEE65FE11CF86719006C6AB8 /* DetailTableViewCell.h */,
+				CEE65FE21CF86719006C6AB8 /* DetailTableViewCell.m */,
+				CEE65FE31CF86719006C6AB8 /* DetailTableViewCell.xib */,
 			);
 			path = CellTest;
 			sourceTree = "<group>";
@@ -253,8 +258,8 @@
 			files = (
 				CEE75F431CF7CA270038467F /* LaunchScreen.storyboard in Resources */,
 				CEE75F401CF7CA270038467F /* Assets.xcassets in Resources */,
+				CEE65FE51CF86719006C6AB8 /* DetailTableViewCell.xib in Resources */,
 				CEE75F3E1CF7CA270038467F /* Main.storyboard in Resources */,
-				CEE75F6D1CF7CD990038467F /* SPCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEE75F681CF7CAA40038467F /* ViewController.m in Sources */,
+				CEE65FE41CF86719006C6AB8 /* DetailTableViewCell.m in Sources */,
 				CEE75F351CF7CA260038467F /* AppDelegate.m in Sources */,
 				CEE75F321CF7CA260038467F /* main.m in Sources */,
 				CEE75F6C1CF7CD990038467F /* SPCollectionViewCell.m in Sources */,
@@ -506,6 +512,7 @@
 				CEE75F5F1CF7CA270038467F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEE75F601CF7CA270038467F /* Build configuration list for PBXNativeTarget "CellTestTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +521,7 @@
 				CEE75F621CF7CA270038467F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEE75F631CF7CA270038467F /* Build configuration list for PBXNativeTarget "CellTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +530,7 @@
 				CEE75F651CF7CA270038467F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

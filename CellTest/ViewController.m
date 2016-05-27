@@ -8,10 +8,11 @@
 
 #import "ViewController.h"
 #import "SPCollectionViewCell.h"
+#import "DetailTableViewCell.h"
 
 NSString *cellIdentifier = @"cellIdentifier";
 
-@interface ViewController ()<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
+@interface ViewController ()<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong)UICollectionViewFlowLayout *flowlayout;
 @property BOOL firstLayout;
 @end
@@ -38,8 +39,7 @@ NSString *cellIdentifier = @"cellIdentifier";
     self.mainCollectionView.showsHorizontalScrollIndicator = NO;
     self.mainCollectionView.backgroundColor = [UIColor clearColor];
     
-    UINib *nib = [UINib nibWithNibName:@"SPCollectionViewCell" bundle:[NSBundle mainBundle]];
-    [self.mainCollectionView registerNib:nib forCellWithReuseIdentifier:cellIdentifier];
+    [self.mainCollectionView registerClass:[SPCollectionViewCell class] forCellWithReuseIdentifier:cellIdentifier];
 }
 
 
@@ -73,5 +73,23 @@ NSString *cellIdentifier = @"cellIdentifier";
     
     return cell;
 }
+
+- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(SPCollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
+    [cell setTableViewDataSourceDelegate:self indexPath:indexPath];
+}
+
+
+#pragma mark - UITableViewDelegate
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    DetailTableViewCell *cell = (DetailTableViewCell *)[tableView dequeueReusableCellWithIdentifier:TableViewCellIdentifier forIndexPath:indexPath];
+    cell.nameLabel.text = [NSString stringWithFormat:@"%ld", indexPath.row];
+    
+    return cell;
+}
+
 
 @end
