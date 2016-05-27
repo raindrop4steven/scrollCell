@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SPCollectionViewCell.h"
 
 NSString *cellIdentifier = @"cellIdentifier";
 
@@ -37,7 +38,8 @@ NSString *cellIdentifier = @"cellIdentifier";
     self.mainCollectionView.showsHorizontalScrollIndicator = NO;
     self.mainCollectionView.backgroundColor = [UIColor clearColor];
     
-    [self.mainCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:cellIdentifier];
+    UINib *nib = [UINib nibWithNibName:@"SPCollectionViewCell" bundle:[NSBundle mainBundle]];
+    [self.mainCollectionView registerNib:nib forCellWithReuseIdentifier:cellIdentifier];
 }
 
 
@@ -60,7 +62,7 @@ NSString *cellIdentifier = @"cellIdentifier";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
+    SPCollectionViewCell *cell = (SPCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
     
     if (indexPath.row % 3 == 0)
         cell.backgroundColor = [UIColor redColor];
